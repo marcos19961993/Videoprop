@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Overlay</title>
+<style>
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Altere a opacidade conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-overlay p {
+    color: white;
+    font-size: 24px;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="video-container">
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+    Seu navegador não suporta o elemento de vídeo.
+  </video>
+  <div class="video-overlay">
+    <p>Seu texto de overlay aqui</p>
+  </div>
+</div>
+</body>
+</html>
